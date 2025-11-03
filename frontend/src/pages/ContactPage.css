@@ -1,0 +1,64 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__details p,
+.contact__info p {
+  color: #415a77;
+  line-height: 1.6;
+}
+
+.contact__map iframe {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  min-height: 260px;
+  box-shadow: 0 18px 36px rgba(13, 27, 42, 0.1);
+}
+
+.contact__form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 35px rgba(13, 27, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact__status {
+  font-weight: 600;
+}
+
+.contact__status--success {
+  color: #2e7d32;
+}
+
+.contact__status--error {
+  color: #c0392b;
+}

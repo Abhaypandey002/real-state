@@ -1,0 +1,28 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 0;
+}
+
+.stats__item {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(13, 27, 42, 0.08);
+}
+
+.stats__value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #274690;
+}
+
+.stats__label {
+  color: #415a77;
+  font-size: 0.95rem;
+}
