@@ -1,0 +1,155 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.dashboard__stats div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 36px rgba(13, 27, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.dashboard__stats span {
+  color: #415a77;
+}
+
+.dashboard__stats strong {
+  font-size: 1.8rem;
+  color: #274690;
+}
+
+.dashboard__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.dashboard__form,
+.dashboard__panel {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 35px rgba(13, 27, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard__form .field,
+.dashboard__form .field-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.dashboard__form .field {
+  grid-template-columns: 1fr;
+}
+
+.dashboard__form input,
+.dashboard__form textarea,
+.dashboard__form select {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.dashboard__form-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dashboard__project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard__project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f9fc;
+  padding: 1.2rem;
+  border-radius: 14px;
+}
+
+.dashboard__project-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.dashboard__project-actions button {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #274690;
+  background: transparent;
+  color: #274690;
+  cursor: pointer;
+}
+
+.dashboard__project-actions button:hover {
+  background: #274690;
+  color: #f5f7fa;
+}
+
+.dashboard__inquiries {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard__inquiries li {
+  background: #f7f9fc;
+  padding: 1rem 1.2rem;
+  border-radius: 14px;
+}
+
+.dashboard__inquiries li div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard__inquiries li span {
+  color: #61c0bf;
+}
+
+.dashboard__status {
+  text-align: center;
+  font-weight: 600;
+}
+
+.dashboard__status--success {
+  color: #2e7d32;
+}
+
+.dashboard__status--error {
+  color: #c0392b;
+}
